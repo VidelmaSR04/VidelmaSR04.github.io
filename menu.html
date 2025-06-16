@@ -1,0 +1,2513 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Menu</title>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link media="all" rel="stylesheet" href="./src/css/all.css" />
+    <link media="all" rel="stylesheet" href="./src/css/fontawesome.css" />
+
+```
+<link media="all" rel="stylesheet" href="./src/css/menu.css" />
+<link media="all" rel="stylesheet" href="./src/css/product.css" />
+```
+
+  </head>
+
+  <body>
+    <header>
+      <div class="header-wrap">
+        <div class="mobile-nav">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="logo">
+          <a href="/">
+            <img src="./assets/LOGO-SMADA.png" alt="Tani Kopi" />
+          </a>
+        </div>
+        <nav>
+          <div class="nav-wrap">
+            <a href="./index.html">Beranda</a>
+            <a href="./menu.html">Menu</a>
+            <a href="./about-us.html">Tentang Kami</a>
+            <a href="./contact-us.html">Kontak Kami</a>
+          </div>
+        </nav>
+        <div class="cart-button">
+          <svg width="73" height="74" viewBox="0 0 73 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12.1665 12.6667H20.0249C20.6332 12.6667 20.9374 12.6667 21.1574 12.8385C21.3774 13.0103 21.4512 13.3053 21.5987 13.8955L23.7188 22.3758C24.0138 23.5561 24.1614 24.1462 24.6014 24.4898C25.0415 24.8334 25.6498 24.8334 26.8664 24.8334H30.4165"
+              stroke="#222"
+              stroke-width="3.24444"
+              stroke-linecap="round"
+            />
+            <path
+              d="M54.75 52.2083H20.5007C19.4737 52.2083 18.9601 52.2083 18.7173 51.8715C18.4746 51.5346 18.637 51.0474 18.9617 50.0731L20.5522 45.3018C20.9091 44.2311 21.0875 43.6957 21.5124 43.3895C21.9372 43.0833 22.5015 43.0833 23.6301 43.0833H42.5833"
+              stroke="#222"
+              stroke-width="3.24444"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M50.7056 43.0833H25.7074C24.9144 43.0833 24.2376 42.51 24.1072 41.7278L21.5276 26.25C21.404 25.5084 21.9759 24.8333 22.7277 24.8333H59.5208C60.1237 24.8333 60.5159 25.4679 60.2462 26.0072L52.1565 42.1866C51.8818 42.7362 51.32 43.0833 50.7056 43.0833Z"
+              stroke="#222"
+              stroke-width="3.24444"
+              stroke-linecap="round"
+            />
+            <circle cx="51.7082" cy="61.3334" r="3.04167" fill="#222" />
+            <circle cx="27.3752" cy="61.3334" r="3.04167" fill="#222" />
+          </svg>
+          <span id="cart-count" class="cart-count"></span>
+        </div>
+      </div>
+    </header>
+
+```
+<main>
+  <div class="wrap">
+    <h2 class="title">Selamat Datang Di Kopsis Smada</h2>
+
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Cari produk..." onkeyup="searchProducts()">
+      </div>
+
+    <div class="menu-wrap">
+      <div class="tab"></div>
+
+      <div class="overlay" onclick="closePopup()"></div>
+      <div class="popup"></div>
+      <div class="menu-list">
+
+  <!-- Product Favorit -->
+  <div class="product best">
+          <div class="product-wrap">
+            <div class="img">
+              <img src="./assets/PRODUK PENJUALAN/FRUIT TEA APPLE SASHET.png" />
+            </div>
+            <h3>Fruit Tea Apple Sashet</h3>
+            <p class="category">Minuman</p>
+            <div class="product-coice"> 
+            </div>
+            <div class="price">Rp 4.000</div>
+          </div>
+        </div>
+
+       <div class="product best">
+  <div class="product-wrap">
+    <div class="img">
+      <img src="./assets/PRODUK PENJUALAN/Floridina.png" />
+    </div>
+    <h3>Floridina</h3>
+    <p class="category">Minuman</p>
+    <div class="product-coice"></div>
+    <div class="price">Rp 4.000</div>
+  </div>
+</div>
+
+<div class="product best">
+  <div class="product-wrap">
+    <div class="img">
+      <img src="./assets/PRODUK PENJUALAN/Ultramilk Full Cream.png" />
+    </div>
+    <h3>Ultramilk Full Cream</h3>
+    <p class="category">Minuman</p>
+    <div class="product-coice"></div>
+    <div class="price">Rp 6.000</div>
+  </div>
+</div>
+
+<div class="product best">
+  <div class="product-wrap">
+    <div class="img">
+      <img src="./assets/PRODUK PENJUALAN/BULPEN GEL JOYKO.png" />
+    </div>
+    <h3>Bulpen Gel Joyko</h3>
+    <p class="category">Alat Tulis</p>
+    <div class="product-coice"></div>
+    <div class="price">Rp 3.000</div>
+  </div>
+</div>
+
+<div class="product best">
+  <div class="product-wrap">
+    <div class="img">
+      <img src="./assets/PRODUK PENJUALAN/TIPE-X JOYKO.png" />
+    </div>
+    <h3>TIPE X Joyko</h3>
+    <p class="category">Alat Tulis</p>
+    <div class="product-coice"></div>
+    <div class="price">Rp 3.000</div>
+  </div>
+</div>
+
+<div class="product best">
+  <div class="product-wrap">
+    <div class="img">
+      <img src="./assets/PRODUK PENJUALAN/25Chocolate Sundae_1_11zon.png" />
+    </div>
+    <h3>Aice Chocolate Sundae</h3>
+    <p class="category">Ice Cream</p>
+    <div class="product-coice"></div>
+    <div class="price">Rp 5.000</div>
+  </div>
+</div>
+
+<div class="product best">
+  <div class="product-wrap">
+    <div class="img">
+      <img src="./assets/PRODUK PENJUALAN/8Aice Miki-Miki_18_11zon.png" />
+    </div>
+    <h3>Aice Miki-Miki</h3>
+    <p class="category">Ice Cream</p>
+    <div class="product-coice"></div>
+    <div class="price">Rp 2.000</div>
+  </div>
+</div>
+
+<div class="product best">
+  <div class="product-wrap">
+    <div class="img">
+      <img src="./assets/PRODUK PENJUALAN/95Mooochii Vanilla_11zon.png" />
+    </div>
+    <h3>Aice Mochi Vanila</h3>
+    <p class="category">Ice Cream</p>
+    <div class="product-coice"></div>
+    <div class="price">Rp 3.000</div>
+  </div>
+</div>
+
+<div class="product best">
+  <div class="product-wrap">
+    <div class="img">
+      <img src="./assets/PRODUK PENJUALAN/Chocolatos Original Wafer Stick.png" />
+    </div>
+    <h3>Chocolatos Original Wafer Stick</h3>
+    <p class="category">Makanan</p>
+    <div class="product-coice"></div>
+    <div class="price">Rp 500</div>
+  </div>
+</div>
+
+<div class="product best">
+  <div class="product-wrap">
+    <div class="img">
+      <img src="./assets/PRODUK PENJUALAN/9 Taro Potato Barbecue.png" />
+    </div>
+    <h3>Taro Potato Barbeque</h3>
+    <p class="category">Makanan</p>
+    <div class="product-coice"></div>
+    <div class="price">Rp 2.000</div>
+  </div>
+</div>
+
+
+
+ <!-- Product -->
+  <!-- Product Minuman --> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/TEH-RIO.png" /> 
+</div> 
+<h3>Teh Rio</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 1.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/ALE-ALE-STRAWBERRY.png" /> 
+</div> 
+<h3>Ale Ale Strawberry</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 1.500</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/ALE-ALE-SIRSAK.png" /> 
+</div> 
+<h3>Ale Ale Sirsak</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 1.500</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/ALE-ALE-ANGGUR.png" /> 
+</div> 
+<h3>Ale Ale Anggur</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 1.500</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/Golda.png" /> 
+</div> 
+<h3>Golda</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 3.500</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/FRUIT TEA BLACKCURRANT BOTOL.png" /> 
+</div> 
+<h3>Fruit Blackcurrant Botol</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 4.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/FRUIT TEA BLACKCURRANT.png" /> 
+</div> 
+<h3>Fruit Tea Blackcurrant Sashet</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 4.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/FRUIT TEA FREEZE.png" /> 
+</div> 
+<h3>Fruit Tea Freeze Botol</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 6.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/FRUIT TEA STOBERI.png" /> 
+</div> 
+<h3>Fruit Tea Stoberi Botol</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 6.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/KOPI ABC CHOCO MALT COFFEE.png" /> 
+</div> 
+<h3>ABC Kopi Choco Malt</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 4.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/KOPI ABC SUSU.png" /> 
+</div> 
+<h3>ABC Kopi Susu</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 4.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/Kopikap.png" /> 
+</div> 
+<h3>Kopikap</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 1.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/OKKY Minuman Jeli Rasa Blackcurrant.png" /> 
+</div> 
+<h3>OKKY Minuman Jeli Rasa Blackcurrant</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 2.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/OKKY Minuman Jeli Rasa Jambu.png" /> 
+</div> 
+<h3>OKKY Minuman Jeli Rasa Jambu</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 2.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/OKKY Minuman Jeli Rasa Jeruk.png" /> 
+</div> 
+<h3>OKKY Minuman Jeli Rasa Jeruk</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 2.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/OKKY Minuman Jeli Rasa Mangga.png" /> 
+</div> 
+<h3>OKKY Minuman Jeli Rasa Mangga</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 2.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/OKKY Minuman Koko Rasa Leci.png" /> 
+</div> 
+<h3>OKKY Minuman Jeli Rasa Leci</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 2.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/15 Pocari Sweat 350 ml.png" /> 
+</div> 
+<h3>Pocari Sweat 350 ml</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 6.500</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/15_Alqodiri_600_ml-removebg-preview.png" /> 
+</div> 
+<h3>Air Mineral Alqodiri 600 ml</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 2.500</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/15_Aqua_600_ml-removebg-preview.png" /> 
+</div> 
+<h3>Air Mineral Aqua 600 ml</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 3.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/15_Aquaviva_700ml-removebg-preview.png" /> 
+</div> 
+<h3>Air Mineral Aquaviva 700 ml</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 2.500</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/15_Le_Mineral_600_ml-removebg-preview.png" /> 
+</div> 
+<h3>Air Le Mineral 600 ml</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 3.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/16 Cimory Fresh Milk Choco Malt.png" /> 
+</div> 
+<h3>Cimory Fresh Milk Choco Malt</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 6.500</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/16 Cimory Fresh Milk Marie Biscuits.png" /> 
+</div> 
+<h3>Cimory Fresh Milk Marie Biscuits</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 6.500</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/16 Cimory Fresh Stawberry.png" /> 
+</div> 
+<h3>Cimory Fresh Milk Marie Stawberr</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 6.500</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/16 Isoplus.png" /> 
+</div> 
+<h3>Isoplus</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 3.500</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/16 Milku Coklat.png" /> 
+</div> 
+<h3>Milku Coklat</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 3.500</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/16 Milku Stroberi.png" /> 
+</div> 
+<h3>Milku Stroberi</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 3.500</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/16_Milku_Susu_UHT_Original-removebg-preview.png" /> 
+</div> 
+<h3>Milku Susu UHT</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 3.500</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/16 Nutriboost Orange_11zon.png" /> 
+</div> 
+<h3>Nutriboost Orange</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 7.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/16 Nutriboost Strawberry_11zon.png" /> 
+</div> 
+<h3>Nutriboost Strawberry</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 7.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/16 Powe F Anggur.png" /> 
+</div> 
+<h3>Power F Anggur</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 1.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/16 Powe F Merah.png" /> 
+</div> 
+<h3>Power F Merah</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 1.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/16 Powe F Mix Fruirt.png" /> 
+</div> 
+<h3>Power F Mix</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 1.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/16 Sari Kacang Hijau.png" /> 
+</div> 
+<h3>Sari Kacang Hijau</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 5.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/16 Sprite.png" /> 
+</div> 
+<h3>Sprite 390 ml</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 5.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/16 Teh Kotak Apel.png" /> 
+</div> 
+<h3>Teh Kotak Apel</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 5.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/16 Teh Kotak Blackcurrant.png" /> 
+</div> 
+<h3>Teh Kotak Blackcurrant</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 5.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/16 Teh Kotak Melati 2.png" /> 
+</div> 
+<h3>Teh Kotak Melati</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 5.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/16 Tora Coffee Latte.png" /> 
+</div> 
+<h3>Tora Coffee Latte</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 4.500</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/16 Tora Milky Latte.png" /> 
+</div> 
+<h3>Tora Milky Latte</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 4.500</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/16_Bear_Brand_11zon-removebg-preview.png" /> 
+</div> 
+<h3>Bear Brand</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 9.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/16_Cimory_Yogurth_Squeeze_Blueberry-removebg-preview.png" /> 
+</div> 
+<h3>Cimory Yogurth Squeeze Blueberry</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 10.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/16_Cimory_Yogurth_Squeeze_Mango_Sticky_Rice-removebg-preview.png" /> 
+</div> 
+<h3>Cimory Yogurth Squeeze Mango</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 10.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/16_Cimory_Yogurth_Squeeze_Original-removebg-preview.png" /> 
+</div> 
+<h3>Cimory Yogurth Squeeze Original</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 10.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/16_Cimory_Yogurth_Squeeze_Strawberry-removebg-preview.png" /> 
+</div> 
+<h3>Cimory Yogurth Squeeze Strawberry</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 10.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/16_Coca_Cola_11zon-removebg-preview.png" /> 
+</div> 
+<h3>Coca Cola 390 ml</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 5.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/16_Fanta_Strawberry_11zon-removebg-preview.png" /> 
+</div> 
+<h3>Fanta Strawberry</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 5.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/16_Milo_11zon-removebg-preview.png" /> 
+</div> 
+<h3>Susu Milo 180 ml</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 6.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/17_Adem_Sari_Cing_Ku_Lemon-removebg-preview.png" /> 
+</div> 
+<h3>Adem Sari Cing ku</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 7.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/17_Buavita_Jambu-removebg-preview.png" /> 
+</div> 
+<h3>Buavita Jambu</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 6.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/17_Buavita_Jeruk-removebg-preview.png" /> 
+</div> 
+<h3>Buavita Jeruk</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 6.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/17_Cimorry_Stick_Yogurt_Blueberry-removebg-preview.png" /> 
+</div> 
+<h3>Cimory Stick Yogurt Blueberry</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 3.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/17_Cimorry_Yogurth_Drink_Bluberry-removebg-preview.png" /> 
+</div> 
+<h3>Cimory Drink Yogurt Blueberry</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 8.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/17_Cimorry_Yogurth_Drink_Strawberry-removebg-preview.png" /> 
+</div> 
+<h3>Cimory Drink Yogurt Strawberry</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 8.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/17_Cincau_Cap_Panda-removebg-preview.png" /> 
+</div> 
+<h3>Cimory Drink Yogurt Strawberry</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 6.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/17_Larutan_Cap_Kaki_Tiga_Kaleng-removebg-preview.png" /> 
+</div> 
+<h3>Cap Kaki Tiga Kaleng Rasa Leci</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 7.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/17_Larutan_Cap_Kaki_Tiga_Kaleng_Jambu-removebg-preview.png" /> 
+</div> 
+<h3>Cap Kaki Tiga Kaleng Rasa Jambu</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 7.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/Mie-Sedap-Goreng.png" /> 
+</div> 
+<h3>Mie Sedaap Goreng</h3> 
+<p class="category">Mie Instan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 3.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/TehJavana.png" /> 
+</div> 
+<h3>Teh Javana</h3> 
+<p class="category">Minuman</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 3.000</div> 
+</div> 
+</div> 
+<!-- Product Mie instan --> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/Mie-Sedap-Soto.png" /> 
+</div> 
+<h3>Mie Sedaap Soto</h3> 
+<p class="category">Mie Instan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 3.500</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/pop-mie-pedas-dower-pangsit-jontorr_text.png" /> 
+</div> 
+<h3>POP Mie Dower Pangsit</h3> 
+<p class="category">Mie Instan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 7.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/pop-mie-pedes-dower_notext.png" /> 
+</div> 
+<h3>POP Mie Dower</h3> 
+<p class="category">Mie Instan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 7.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/pop-mie-rasa-soto-ayam_text.png" /> 
+</div> 
+<h3>POP Mie Soto Ayam</h3> 
+<p class="category">Mie Instan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 7.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/Popmie Tora Kara.png" /> 
+</div> 
+<h3>POP Mie Tora Kara</h3> 
+<p class="category">Mie Instan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 7.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/rasa-ayam-bawang_notext.png" /> 
+</div> 
+<h3>POP Mie Ayam Bawang</h3> 
+<p class="category">Mie Instan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 7.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/rasa-baso_notext.png" /> 
+</div> 
+<h3>POP Mie Bakso</h3> 
+<p class="category">Mie Instan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 7.000</div> 
+</div> 
+</div> 
+<!-- Product Alat Tulis--> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/BUKU-GAMBAR-SIDU-A4.png" /> 
+</div> 
+<h3>Buku Gambar Sidu A4</h3> 
+<p class="category">Alat Tulis</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 5.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/BUKU TULIS SIDU 32.png" /> 
+</div> 
+<h3>Buku Tulis Sidu 32</h3> 
+<p class="category">Alat Tulis</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 4.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/BUKU TULIS SIDU 38.png" /> 
+</div> 
+<h3>Buku Tulis Sidu 38</h3> 
+<p class="category">Alat Tulis</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 5.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/BULPEN STANDART BIRU.png" /> 
+</div> 
+<h3>Bulpen Standart Biru</h3> 
+<p class="category">Alat Tulis</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 3.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/BULPEN STANDART HITAM.png" /> 
+</div> 
+<h3>Bulpen Standart Hitam</h3> 
+<p class="category">Alat Tulis</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 3.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/BULPEN STANDART MERAH.png" /> 
+</div> 
+<h3>Bulpen Standart Merah</h3> 
+<p class="category">Alat Tulis</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 3.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/MAP KERTAS.png" /> 
+</div> 
+<h3>Map Kertas</h3> 
+<p class="category">Alat Tulis</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 1.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/MAP SNAIL HECTER.png" /> 
+</div> 
+<h3>Map Snail Hecter</h3> 
+<p class="category">Alat Tulis</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 4.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/PENGHAPUS JOYKO.png" /> 
+</div> 
+<h3>Penghapus Joyko</h3> 
+<p class="category">Alat Tulis</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 1.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/PENSIL 2B JOYKO.png" /> 
+</div> 
+<h3>Pensil 2B Joyko</h3> 
+<p class="category">Alat Tulis</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 2.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/PERNGGARIS BUTTERFLY 30 CM.png" /> 
+</div> 
+<h3>Penggaris Butterfly 30 CM</h3> 
+<p class="category">Alat Tulis</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 4.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/ISI STAPLES.png" /> 
+</div> 
+<h3>Isi Staples Joyko</h3> 
+<p class="category">Alat Tulis</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 3.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/LEM STIK.png" /> 
+</div> 
+<h3>Isi Lem Stiks Joyko</h3> 
+<p class="category">Alat Tulis</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 4.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/PAKU PAYUNG.png" /> 
+</div> 
+<h3>Paku Payung</h3> 
+<p class="category">Alat Tulis</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 2.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/PUSH PINS.png" /> 
+</div> 
+<h3>Push Pins Joyko</h3> 
+<p class="category">Alat Tulis</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 4.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/STABILO JOYKO.png" /> 
+</div> 
+<h3>Stabilo Joyko</h3> 
+<p class="category">Alat Tulis</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 6.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/TIPE X JOYKO BESAR.png" /> 
+</div> 
+<h3>TIPE X Besar Joyko</h3> 
+<p class="category">Alat Tulis</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 6.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/TIPE X KERTAS.png" /> 
+</div> 
+<h3>Tipe X Kertas Joyko</h3> 
+<p class="category">Alat Tulis</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 6.000</div> 
+</div> 
+</div> 
+<!-- Product Makanan--> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/Chocolatos Dark Wafer Stick.png" /> 
+</div> 
+<h3>Chocolatos Dark Wafer Stick</h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 1.500</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/Chocolatos Wafer Stick Rasa Vanilla.png" /> 
+</div> 
+<h3>Chocolatos Wafer Stick Rasa Vanilla</h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 1.500</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/Chocolatos White Wafer Stick Sweet Cheese.png" /> 
+</div> 
+<h3>Chocolatos Wafer Stick Rasa Sweet Cheese</h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 1.500</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/CHOCOPIE.png" /> 
+</div> 
+<h3>Chocopie</h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 4.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/DEKA CHOCONUT.png" /> 
+</div> 
+<h3>Deka Choconut</h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 1.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/DEKA CHOOCHOO.png" /> 
+</div> 
+<h3>Deka Choochoo</h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 1.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/DILAN Bar.png" /> 
+</div> 
+<h3>Dilan Bar</h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 2.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/DILAN Chocolate Crunchy Caramel Cheese Choco Nut.png" /> 
+</div> 
+<h3>Dilan Chocolate Crunchy Caramel Cheese Choco Nut</h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 2.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/DILAN Chocolate Crunchy Caramel.png" /> 
+</div> 
+<h3>Dilan Chocolate Crunchy Caramel</h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 2.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/DILAN Sandwich.png" /> 
+</div> 
+<h3>Dilan Sandwich </h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 1.500</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/DILAN Waffle.png" /> 
+</div> 
+<h3>Dilan Waffle </h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 2.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/Garuda Pilus Pedas - 7g.png" /> 
+</div> 
+<h3>Garuda Pilus Pedas </h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 1.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/Garuda Pilus Rasa Abon -7g.png" /> 
+</div> 
+<h3>Garuda Pilus Rasa Abon </h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 1.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/Garuda Pilus Rumput Laut -7g.png" /> 
+</div> 
+<h3>Garuda Pilus Rasa Rumput Laut </h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 1.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/Garuda Pilus Sapi Panggang - 7g.png" /> 
+</div> 
+<h3>Garuda Pilus Rasa Sapi Panggang </h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 1.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/Gery Saluut Malkist Cokelat Kelapa Single Pack.png" /> 
+</div> 
+<h3>Gery Saluut Malkist Cokelat Kelapa </h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 1.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/Gery Saluut Malkist Cokelat Single Pack.png" /> 
+</div> 
+<h3>Gery Saluut Malkist Cokelat </h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 1.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/Gery Saluut Malkist Keju Single Pack.png" /> 
+</div> 
+<h3>Gery Saluut Malkist Keju </h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 1.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/Gery Saluut Malkist Kelapa Single Pack.png" /> 
+</div> 
+<h3>Gery Saluut Malkist Kelapa </h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 1.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/Gery Saluut Malkist Matcha Latte Single Pack.png" /> 
+</div> 
+<h3>Gery Saluut Malkist Matcha </h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 1.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/Gery Saluut O'Donuts.png" /> 
+</div> 
+<h3>Gery Saluut O'Donuts </h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 1.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/Gery Saluut Wafer Cokelat Tabur Kelapa.png" /> 
+</div> 
+<h3>Gery Saluut Wafer Cokelat Tabur Kelapa </h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 1.500</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/Gery Saluut Wafer Tabur Kelapa.png" /> 
+</div> 
+<h3>Gery Saluut Wafer Tabur Kelapa </h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 1.500</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/Gery Snack Sereal Cokelat.png" /> 
+</div> 
+<h3>Gery Snack Sereal Cokelat </h3> 
+<p class="category">Makanan</p><div class="product-coice"> 
+</div> 
+<div class="price">Rp 1.500</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/Gery Snack Sereal Pillow Cokelat.png" /> 
+</div> 
+<h3>Gery Snack Sereal Pillow Cokelat </h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 2.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/Gery Snack Sereal Pillow Keju.png" /> 
+</div> 
+<h3>Gery Snack Sereal Pillow Keju </h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 2.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/MOMOGI COKELAT.png" /> 
+</div> 
+<h3>Momogi Cokelat </h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 500</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/MOMOGI JAGUNG BAKAR.png" /> 
+</div> 
+<h3>Momogi Jagung Bakar </h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 500</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/1 Richeese Ahh.png" /> 
+</div> 
+<h3>Richeese Ahh</h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 500</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/1 Roti Aoka Rasa Vanila.png" /> 
+</div> 
+<h3>Roti Aoka Rasa Vanila</h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 3.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/11 Roti Aoka Rasa Strawbery.png" /> 
+</div> 
+<h3>Roti Aoka Rasa Strawbery</h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 3.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/12 Roti Aoka Rasa Blueberry.png" /> 
+</div> 
+<h3>Roti Aoka Rasa Blueberry</h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 3.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/12 Roti Aoka Rasa Coklat.png" /> 
+</div> 
+<h3>Roti Aoka Rasa Coklat</h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 3.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/12 Roti Aoka Rasa Durian.png" /> 
+</div> 
+<h3>Roti Aoka Rasa Durian</h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 3.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/12 Roti Aoka Rasa Keju.png" /> 
+</div> 
+<h3>Roti Aoka Rasa Keju</h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 3.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/12 Roti Aoka Rasa nanas.png" /> 
+</div> 
+<h3>Roti Aoka Rasa nanas</h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 3.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/13 Aoka Roti Gulung Rasa Coklat.png" /> 
+</div> 
+<h3>Aoka Roti Gulung Rasa Coklat</h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 3.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/13 Aoka Roti Gulung Rasa Keju.png" /> 
+</div> 
+<h3>Aoka Roti Gulung Rasa Keju</h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 3.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/10 Pocky Matcha.png" /> 
+</div> 
+<h3>Pocky Matcha Mini</h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 4.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/7 Pocky Chocolate.png" /> 
+</div> 
+<h3>Pocky Chocolate Mini</h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 4.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/8 Pocky Strawberry.png" /> 
+</div> 
+<h3>Pocky Strawberry Mini</h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 4.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/9 Pocky Cookies & Cream.png" /> 
+</div> 
+<h3>Pocky Cookies & Cream Mini</h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 4.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/12_Roti_Sandwich_Keju-removebg-preview.png" /> 
+</div> 
+<h3>Sari Roti Sandwich Keju </h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 5.500</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/12_Sari_Roti_Dorayaki-removebg-preview.png" /> 
+</div> 
+<h3>Sari Roti Dorayaki </h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 6.500</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/12_Sari_Roti_Sandwich_Coklat-removebg-preview.png" /> 
+</div> 
+<h3>Sari Roti Sandwich Coklat </h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 5.500</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/12_Sari_Roti_Zuperr_Creamy_Cokelat-removebg-preview.png" /> 
+</div> 
+<h3>Sari Roti Zupper Creamy Coklat</h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 4.500</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/12_Sari_Roti_Zuperr_Creamy_Keju-removebg-preview.png" /> 
+</div> 
+<h3>Sari Roti Zupper Creamy Keju </h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 4.500</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/13 Beng Beng.png" /> 
+</div> 
+<h3>Beng Beng </h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 3.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/13 Choki Choki.png" /> 
+</div> 
+<h3>Choki Choki </h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 1.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/13_Mie_Enak_Gemez-removebg-preview.png" /> 
+</div> 
+<h3>Mie Gemez Enak </h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 1.500</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/13_Pasta_Keju_Richeese-removebg-preview.png" /> 
+</div> 
+<h3>Richeese Pasta Keju </h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 1.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/14 Potabee Rasa Grilled Seaweed.png" /> 
+</div> 
+<h3>Potabee Rasa Grilled Seaweed </h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 2.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/14_Potabee_Rasa_BBQ-removebg-preview.png" /> 
+</div> 
+<h3>Potabee Rasa BBQ </h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 2.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/14_Better-removebg-preview.png" /> 
+</div> 
+<h3>Better</h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 2.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/14_French_Fries-removebg-preview.png" /> 
+</div> 
+<h3>French Fries</h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 2.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/14_GoodTime-removebg-preview.png" /> 
+</div> 
+<h3>Good Time</h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 2.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/14_Kris_Bee-removebg-preview.png" /> 
+</div> 
+<h3>Kris Bee</h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 2.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/14_Nextar_Choco_Brownies-removebg-preview.png" /> 
+</div> 
+<h3>Nextar Choco Brownies</h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 2.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/14_Nextar_Pineapple_Brownies-removebg-preview.png" /> 
+</div> 
+<h3>Nextar Pineapple Brownies</h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 2.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/15 Arden Choco Splendid.png" /> 
+</div> 
+<h3>Arden Choco Splendid</h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 3.500</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/15 Japota Umami Japanese Seaweed.png" /> 
+</div> 
+<h3>Japota Umami Japanese Seaweed</h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 2.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/15 Kuaci Rebo Milk.png" /> 
+</div> 
+<h3>Kuaci Rebo Milk</h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 1.500</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/15 Kuaci Rebo.png" /> 
+</div> 
+<h3>Kuaci Rebo Original</h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 1.500</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/15 Sari Gandum Coklat.png" /> 
+</div> 
+<h3> Sari Gandum Coklat</h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 2.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/15 Super Star.png" /> 
+</div> 
+<h3> Super Star</h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 1.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/15_Chitato_Keju-removebg-preview.png" /> 
+</div> 
+<h3>Chitato Keju</h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 2.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/15_Chitato_Sapi_Panggang-removebg-preview.png" /> 
+</div> 
+<h3>Chitato Sapi Panggang</h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 2.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/15_Piatos_Sambal_Geprek-removebg-preview.png" /> 
+</div> 
+<h3>Piatos Sambal Geprek</h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 2.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/15_Piatos_Sapi_Panggang-removebg-preview.png" /> 
+</div> 
+<h3>Piatos Sapi Panggang</h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 2.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/15_Sosis_So_Nice_1_Pcs-removebg-preview.png" /> 
+</div> 
+<h3>Sosis So Nice 1 Pcs</h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 1.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/9 Taro Seaweed_11zon.png" /> 
+</div> 
+<h3>Taro Seaweed</h3> 
+<p class="category">Makanan</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 2.000</div> 
+</div> 
+</div> 
+<!--= Product Es Krim --> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/1Blueberry Cookies_11zon.png" /> 
+</div> 
+<h3>Aice Blueberry Cookies </h3> 
+<p class="category">Ice Cream</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 7.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/11Aice Semangka_15_11zon.png" /> 
+</div> 
+<h3>Aice Semangka </h3> 
+<p class="category">Ice Cream</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 2.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/12Chocolate (2 Colors Stick)_14_11zon.png" /> 
+</div> 
+<h3>Aice Chocolate (2 Colors Stick) </h3> 
+<p class="category">Ice Cream</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 3.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/13Aice Nanas_13_11zon.png" /> 
+</div> 
+<h3>Aice Nanas </h3> 
+<p class="category">Ice Cream</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 2.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/14Aice Milk_12_11zon.png" /> 
+</div> 
+<h3>Aice Milk </h3> 
+<p class="category">Ice Cream</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 2.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/14Aice Milk_12_11zon.png" /> 
+</div> 
+<h3>Aice Milk </h3> 
+<p class="category">Ice Cream</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 2.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/15Milki Melon_11_11zon.png" /> 
+</div> 
+<h3>Aice Milki Melon </h3> 
+<p class="category">Ice Cream</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 3.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/16Fruizy Blueberry Yoghurt_10_11zon.png" /> 
+</div> 
+<h3>Aice Fruizy Blueberry Yoghurt </h3> 
+<p class="category">Ice Cream</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 3.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/17Taro Crispy_9_11zon.png" /> 
+</div> 
+<h3>Aice Taro Crispy </h3> 
+<p class="category">Ice Cream</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 3.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/18Mango Slush_8_11zon.png" /> 
+</div> 
+<h3>Aice Mango Slush </h3> 
+<p class="category">Ice Cream</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 4.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/19Strawberry Crispy_7_11zon.png" /> 
+</div> 
+<h3>Aice Strawberry Crispy </h3> 
+<p class="category">Ice Cream</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 3.500</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/20Aice Histeria_6_11zon.png" /> 
+</div> 
+<h3>Aice Aice Histeria </h3> 
+<p class="category">Ice Cream</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 8.500</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/21Histeria Peach_5_11zon.png" /> 
+</div> 
+<h3>Aice Aice Histeria Peach</h3> 
+<p class="category">Ice Cream</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 8.500</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/22Histeria Matcha_4_11zon.png" /> 
+</div> 
+<h3>Aice Aice Histeria Matcha</h3> 
+<p class="category">Ice Cream</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 8.500</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/23Choco Melt_3_11zon.png" /> 
+</div> 
+<h3>Aice Choco Melt</h3> 
+<p class="category">Ice Cream</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 5.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/24Strawberry Sundae_2_11zon.png" /> 
+</div> 
+<h3>Aice Strawberry Sundae</h3> 
+<p class="category">Ice Cream</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 5.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/3MilkTea Boba_11zon.png" /> 
+</div> 
+<h3>Aice MilkTea Boba</h3> 
+<p class="category">Ice Cream</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 6.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/4Mochi milk durian_11zon.png" /> 
+</div> 
+<h3>Aice Mochi milk durian</h3> 
+<p class="category">Ice Cream</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 3.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/5Mochi milk tea_11zon.png" /> 
+</div> 
+<h3>Aice Mochi milk tea</h3> 
+<p class="category">Ice Cream</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 3.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/91Mooochii Mango_11zon.png" /> 
+</div> 
+<h3>Aice Mochi Mango</h3> 
+<p class="category">Ice Cream</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 3.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/92Mooochii Banana_11zon.png" /> 
+</div> 
+<h3>Aice Mochi Banana</h3> 
+<p class="category">Ice Cream</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 3.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/93Mooochii Klepon_11zon.png" /> 
+</div> 
+<h3>Aice Mochi Klepon</h3> 
+<p class="category">Ice Cream</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 3.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/94Mooochii Chocolate_11zon.png" /> 
+</div> 
+<h3>Aice Mochi Chogcolate</h3> 
+<p class="category">Ice Cream</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 3.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/6Sweet Corn_20_11zon.png" /> 
+</div> 
+<h3>Aice Sweet Corn</h3> 
+<p class="category">Ice Cream</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 4.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/2Crispy Balls_11zon.png" /> 
+</div> 
+<h3>Aice Crispy Balls</h3> 
+<p class="category">Ice Cream</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 6.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/7Chocolate Crispy_19_11zon.png" /> 
+</div> 
+<h3>Aice Chocolate Crispy</h3> 
+<p class="category">Ice Cream</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 5.000</div> 
+</div> 
+</div> 
+<div class="product"> 
+<div class="product-wrap"> 
+<div class="img"> 
+<img src="./assets/PRODUK PENJUALAN/9Coffee Crispy_17_11zon.png" /> 
+</div> 
+<h3>Aice Coffee Crispy</h3> 
+<p class="category">Ice Cream</p> 
+<div class="product-coice"> 
+</div> 
+<div class="price">Rp 5.000</div> 
+</div> 
+</div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<!-- Modal HTML structure -->
+<div id="cartModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Cart Items</h2>
+      <span class="close">&times;</span>
+    </div>
+    <div id="cartItemsContainer"></div>
+    <div id="modal-footer">
+      <div style="margin-bottom:10px;">
+        <input type="text" id="buyerName" placeholder="Nama Pembeli" style="width: 60%; padding: 6px; margin-bottom: 6px;" />
+        <input type="time" id="pickupTime" placeholder="Jam Ambil" style="width: 35%; padding: 6px; margin-bottom: 6px;" />
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn" id="dropbtn">Bayar</button>
+        <div class="dropdown-content" id="dropdown-content">
+          <a data-value="Cash" onclick="sendToWA('Cash')">Cash</a>
+          <hr />
+          <a data-value="Qris" onclick="sendToWA('Qris')">Qris</a>
+        </div>
+      </div>
+      <div class="checkout">
+        <p id="total-price"></p>
+        <span id="btnCheckout" style="cursor: pointer;">Check Out</span>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+function sendToWA(method) {
+  var items = [];
+  document.querySelectorAll('#cartItemsContainer .cart-item').forEach(function(item) {
+    var name = item.querySelector('.item-name')?.innerText || '';
+    var qty = item.querySelector('.item-qty')?.innerText || '';
+    var price = item.querySelector('.item-price')?.innerText || '';
+    items.push(`${name} x${qty} (${price})`);
+  });
+  var total = document.getElementById('total-price')?.innerText || '';
+  var buyerName = document.getElementById('buyerName').value.trim();
+  var pickupTime = document.getElementById('pickupTime').value;
+  var pickupTimeText = pickupTime ? pickupTime + ' WIB' : '-';
+  var pesan = `Halo, saya ingin melakukan transaksi:\n\nNama: ${buyerName || '-'}\nJam Ambil: ${pickupTimeText}\n\n${items.join('\n')}\n\nTotal: ${total}\nMetode: ${method}`;
+  var waUrl = "https://wa.me/6283129316843?text=" + encodeURIComponent(pesan);
+  window.open(waUrl, '_blank');
+}
+</script>
+
+<footer>
+  <div class="footer-wrap">
+    <div class="left">
+      <h3>Kontak</h3>
+      <div class="location">
+        <p><i class="fas fa-map-marker-alt"></i><span>
+          Jl. Jawa No.16, Tegal Boto Lor, Sumbersari, Kec. Sumbersari, Kabupaten Jember, Jawa Timur 68121</span></p>
+        <p>
+          <i class="fab fa-instagram"></i>
+          <span>
+            <a href="https://www.instagram.com/sman2jember.official" target="_blank" style="color: inherit; text-decoration: none;">
+              @sman2jember.official
+            </a>
+          </span>
+        </p>
+        <p><i class="fas fa-phone-alt"></i><span>(0331) 321375</span></p>
+      </div>
+    </div>
+    <div class="middle">
+      <h2>Koperasi Smada</h2>
+      <p class="desc">Menyediakan Kebutuhan Para Siswa</p>
+      <div class="social">
+
+        <a href="https://sman2jember.sch.id/" target="_blank" rel="nofollow external">
+          <i class="fas fa-globe"></i> 
+          
+        <a href="https://www.instagram.com/sman2jember.official" target="_blank" rel="nofollow external">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@sman2jemberofficial_" target="_blank" rel="nofollow external">
+          <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://www.youtube.com/@sman2jember878" target="_blank" rel="nofollow external">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+    </div>
+    <div class="right">
+      <h3>Jam Kerja</h3>
+      <div class="work-hours">
+        <p><span>Senin - Jumat</span><span>07.00 - 16.00</span></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="./src/js/menu.js"></script>
+<script src="./src/js/all.js"></script>
+```
+
+  </body>
+</html>
